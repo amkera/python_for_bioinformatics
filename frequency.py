@@ -1,6 +1,8 @@
 dna = "CGCCTAAATAGCCTCGCGGAGCCTTATGTCATACTCGTCCT"
 kmer = 3
 
+
+#returns a whole dictionary
 def FrequencyMap(Text, k):
     freq = {}
     n = len(Text)
@@ -14,27 +16,19 @@ def FrequencyMap(Text, k):
     return (freq)
 
 
-#FrequencyMap(dna, kmer)
-
-
-#now return a list with most frequent kmers
-
-# words = []
-# frequencies = FrequencyMap(Text, k)
-
-# most_frequent_kmers = max(frequencies.values())
-
-
+#returns the most frequent kmer
 def FrequentWords(Text, k):
     words = []
     freq = FrequencyMap(Text, k)
-    print (freq)
     m = max(freq.values())
     #3
     for key in freq:
         if freq[key] == m:
             words.append(key)
-    print (words)
     return words
 
-FrequentWords(dna, kmer)
+words = FrequentWords(dna, kmer)
+map = FrequencyMap(dna, kmer)
+
+print("This is the whole map: " + str(map))
+print("This is the most frequent kmer: " + str(words))
