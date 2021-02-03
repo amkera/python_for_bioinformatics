@@ -9,7 +9,6 @@ def PatternMatching(Pattern, Genome):
 
     return (positions)
 
-#PatternMatching("ATAT", "GATATATGCATATACTT")
 
 
 
@@ -20,4 +19,9 @@ def PatternCount(Text, Pattern):
             count = count+1
     return count
 
+
+print(PatternMatching("ATAT", "GATATATGCATATACTT"))
+#returns positions at which the pattern is found in the genome
+
 print(PatternCount("ACTGTACGATGATGTGTGTCAAAG", "TGT"))
+#returnns how many times the given text appears in the Genome 
