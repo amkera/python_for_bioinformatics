@@ -1,7 +1,7 @@
 # def Reverse(Pattern):
 #     rev = Pattern[::-1]
 #     print (rev)
-
+#
 # Reverse("abcdefg")
 
 
