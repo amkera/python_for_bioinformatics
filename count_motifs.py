@@ -3,7 +3,8 @@
 
 def Count(Motifs):
     count = {} #final dictionary
-    k = len(Motifs[0]) #6
+    rows = Motifs
+    k = len(rows[0]) #6
     for symbol in "ACGT":
         count[symbol] = []
         for j in range(k):
