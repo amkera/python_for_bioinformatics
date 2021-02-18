@@ -4,11 +4,13 @@
 def Count(Motifs):
     count = {} #final dictionary
     rows = Motifs
-    k = len(rows[0]) #6
+    row = len(rows[0]) #6
     for symbol in "ACGT":
         count[symbol] = []
-        for j in range(k):
+        for nucleotide in range(row):
             count[symbol].append(0)
+    #count looks like this: {'A': [0, 0, 0, 0, 0, 0], 'C': [0, 0, 0, 0, 0, 0], 'G': [0, 0, 0, 0, 0, 0], 'T': [0, 0, 0, 0, 0, 0]}
+    
 
 
 
