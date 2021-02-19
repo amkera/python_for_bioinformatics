@@ -41,10 +41,18 @@ def Profile(Motifs):
 
 
     t = len(Motifs) #5, how many strings in the motifs list
-    k = len(t[0]) #6, how many characters/nucelotides in each row
+    k = len(Motifs[0]) #6, how many characters/nucelotides in each row
 
     for i in profile:
         for j in range(k):
             profile[i][j] = profile[i][j]/t
 
     return profile
+
+print(Profile([
+    "AACGTG",
+    "GTGCAC",
+    "GTGCGT",
+    "CACGTG",
+    "CCCGGT"
+]))
