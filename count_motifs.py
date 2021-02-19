@@ -43,8 +43,8 @@ def Profile(Motifs):
     t = len(Motifs) #5, how many strings in the motifs list
     k = len(t[0]) #6, how many characters/nucelotides in each row
 
-    for key_value_pair in profile:
-        for nucleotide in range(k):
-            nucleotide_count = profile[key_value_pair][nucleotide]
-            nucleotide_count = nucleotide_count/t
-    return nucelotide_count
+    for i in profile:
+        for j in range(k):
+            profile[i][j] = profile[i][j]/t
+
+    return profile
