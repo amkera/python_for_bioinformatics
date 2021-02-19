@@ -32,3 +32,19 @@ print(Count([
 #Write a function such that
 # Input:  A list of kmers Motifs
 # Output: the profile matrix of Motifs, as a dictionary of lists.
+
+def Profile(Motifs):
+    profile = {} #final dictionary
+    profile = Count(Motifs) #subroutine
+
+    #{'A': [1, 2, 0, 0, 1, 0], 'C': [2, 1, 3, 2, 0, 1], 'G': [2, 0, 2, 3, 2, 2], 'T': [0, 2, 0, 0, 2, 2]}
+
+
+    t = len(Motifs) #5, how many strings in the motifs list
+    k = len(t[0]) #6, how many characters/nucelotides in each row
+
+    for key_value_pair in profile:
+        for nucleotide in range(k):
+            nucleotide_count = profile[key_value_pair][nucleotide]
+            nucleotide_count = nucleotide_count/t
+    return nucelotide_count
