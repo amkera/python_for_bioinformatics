@@ -33,7 +33,7 @@ for (i in 1:length(listfiles)){
   list.df.freq[[i]] <- df
 }
 
-length(list.df.freq) #19
+length(list.df.freq)
 combined_list <- list()
 
 #Write a routine that combines the sangertsv dataframe with EACH VH freq table dataframe
