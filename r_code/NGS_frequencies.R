@@ -40,7 +40,3 @@ combined_list <- list()
 for (i in 1:length(list.df.freq)) {
   sanger_frequency_df <- merge(selected_data, list.df.freq[[i]], by="Clone")
 }
-
-
-
-#add all freq table entries to sangertsv, column name = filename (clean up all unimportant bits first)
