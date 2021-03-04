@@ -18,7 +18,6 @@ all_data <- bind_rows(all_files, .id = "Sample")
 all_data$Clone = paste(all_data$CDR.H1, all_data$CDR.H2, all_data$CDR.H3, sep="_")
 selected_data <- all_data %>% select(cloneID, VH, Clone)
 
-
 #Routine to read in all NGS VH tables into a list of dataframes
 path_variable = ""
 listfiles <- list.files(path = path_variable, pattern = "VH.freq.total.table.txt")
