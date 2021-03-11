@@ -1,5 +1,8 @@
 library(optparse)
 
+WDIR = getwd()
+#gets the working dir
+
 option_list = list(
   make_option(c("--sanger"), default=NULL, type='character',
               help="enter the folder where the sanger data lives"),
@@ -10,3 +13,5 @@ option_list = list(
 
 )
 opt = parse_args(OptionParser(option_list=option_list))
+
+sanger <- paste0(WDIR, opt$sanger)
