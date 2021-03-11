@@ -15,3 +15,5 @@ option_list = list(
 opt = parse_args(OptionParser(option_list=option_list))
 
 sanger <- paste0(WDIR, opt$sanger)
+freq <- paste0(WDIR, opt$freq)
+outfile <- paste0(WDIR, opt$outfile)
