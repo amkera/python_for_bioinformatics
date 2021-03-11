@@ -7,3 +7,4 @@ option_list = list(
               help="Enter intended name of output csv file")
 
 )
+opt = parse_args(OptionParser(option_list=option_list))
